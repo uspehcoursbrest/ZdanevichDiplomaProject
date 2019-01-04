@@ -1,20 +1,465 @@
 * {
     box-sizing: border-box
 }
+
 body {
     margin: 0 auto;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Montserrat Medium", "Montserrat Black", "Montserrat ExtraBold", "Montserrat SemiBold", sans-serif
 }
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
 .container {
     width: 1200px;
     margin: auto;
     padding: 0 15px;
+}
+/*MAIN*/
+.active1 {
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #3c9ef1;
+}
+.active2 {
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #44d29d;
+}
+.topBar {
+    background-color: white ;
+}
+.topMenu {
+    background-color: #202b2f;
+}
+.calculator {
+    background: linear-gradient(to right, #3c9ef1, #44d29d);
+}
+.whyUsItem [class*="icon"] {
+    font-size: 55px;
+    background: linear-gradient(to right, #3c9ef1, #44d29d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+* a {
+    text-decoration: none;
+}
+
+.logo img, .referral, .plans, .aboutUs, .info, .whyUs, .news {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo span:first-child {
+    font-size: 50px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #202b2f;
+    font-weight: bold;
+    font-style: italic;
+}
+.logo span:nth-child(2) {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.35em;
+    color: #202b2f;
+    font-style: italic;
+    font-weight: bold;
+}
+.socLinks [class*="icon"] {
+    font-size: 22px;
+    line-height: 22px;
+}
+ul.menu li a {
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: 0.020em;
+    color: #ffffff;
+    font-weight: bold;
+}
+.info h1 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.toStart h2.captionLight {
+    font-weight: normal;
+}
+.captionLight {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.captionDark {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    text-transform: uppercase;
+}
+.textLight {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.textDark {
+    font-size: 17px;
+    line-height: 30px;
+    color: #202b2f;
+}
+
+.btnFillColor1, .btnFillColor2, .btnFillDark, .btnFillGrad, ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem span:nth-child(2) {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.btnFillColor3, .btnFillColor4 {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem span:nth-child(2) {
+    letter-spacing: 0.025em;
+}
+.courses ul li span[class*="icon"] {
+    font-size: 60px;
+    color: #202b2f;
+}
+.courses ul li span:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #202b2f;
+}
+.courses ul li span:nth-child(3) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #202b2f;
+    font-weight: bold;
+}
+.courses ul li span:nth-child(4) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #44d29d;
+    font-weight: bold;
+}
+.mainAdvs li span[class*="icon"] {
+    font-size: 40px;
+}
+.license span.icon-columns {
+    font-size: 65px;
+    background: linear-gradient(to right, #3c9ef1, #44d29d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.dailyPlanInfo span:nth-child(2), .afterPlanInfo span:nth-child(2) {
+    font-size: 90px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+.dailyPlanInfo span:nth-child(3), .afterPlanInfo span:nth-child(3) {
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dailyPlanText span:nth-child(odd), .afterPlanText span:nth-child(odd) {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #202b2f;
+}
+.dailyPlanText span:nth-child(even) {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3c9ef1;
+}
+.afterPlanText span:nth-child(even) {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #44d29d;
+}
+.dailyPlanText p, .afterPlanText p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #202b2f;
+    letter-spacing: 0.025em;
+}
+.calculator label {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.calculated span:first-child {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.calculated span:last-child {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #202b2f;
+}
+.commission1 span:first-child, .commission2 span:first-child {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #ffffff;
+}
+.commission1 span:nth-child(2), .commission2 span:nth-child(2) {
+    font-size: 120px;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #3c9ef1;
+}
+.commission2 span:nth-child(2) {
+    color: #44d29d;
+}
+.commission1 p, .commission2 p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+    color: #3c9ef1;
+}
+.commission2 p {
+    color: #44d29d;
+}
+ul.statistics li span[class*="icon"] {
+    font-size: 40px;
+    color: #202b2f;
+}
+ul.statistics li span:nth-child(2) {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+ul.statistics li span:nth-child(3) {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    color: #202b2f;
+}
+ul.lastDep li span, ul.lastWithdrawals li span {
+    letter-spacing: 0.025em;
+    line-height: 30px;
+    color: #202b2f;
+}
+ul.lastDep li span:first-child, ul.lastWithdrawals li span:first-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+ul.lastDep li span:nth-child(2), ul.lastWithdrawals li span:nth-child(2) {
+    font-weight: normal;
+    font-size: 13px;
+}
+ul.lastDep li span:nth-child(3), ul.lastWithdrawals li span:nth-child(3) {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3c9ef1;
+}
+ul.lastWithdrawals li span:nth-child(3) {
+    color: #44d29d;
+}
+ul.lastDep li span[class*="icon"], ul.lastWithdrawals li span[class*="icon"] {
+    font-size: 24px;
+    font-weight: bold;
+}
+.whyUsItem p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #d4dbde;
+}
+div[class*="newsItem"] span {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+     font-weight: bold;
+    color: #3c9ef1;
+ }
+div[class*="newsItem"] p {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #202b2f;
+}
+div[class*="newsItem"] p.newsText {
+    font-size: 15px;
+    font-weight: normal;
+}
+footer {
+    background-color: #202b2f;
+}
+.footerMenu .logo span {
+    color: #ffffff;
+}
+footer div.menuCol1 li a, div.menuCol2 li a {
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: 0.020em;
+    color: #ffffff;
+    font-weight: bold;
+}
+footer .contacts a {
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: underline;
+    letter-spacing: 0.025em;
+    color: #3c9ef1;
+}
+footer .contacts span:nth-child(odd) {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #44d29d;
+}
+
+
+
+
+
+
+
+
+
+/*REFERRALS*/
+.type1 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #202b2f;
+}
+.type2 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #202b2f;
+}
+.type3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.type4 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.myAccount img {
+    width: 32px;
+    height: 32px;
+}
+.avatar img {
+    width: 90px;
+    height: 90px;
+}
+.content [class*="icon"] {
+    font-size: 40px;
+}
+.balance .icon-cash {
+    font-size: 80px;
+    background: linear-gradient(to right, #3c9ef1, #44d29d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.settings span:last-child {
+    text-decoration: underline;
+}
+.settings span:nth-child(3) {
+    color: #ffffff;
+}
+.dates span[class*="icon"] {
+    color: #ffffff;
+}
+.balance span:nth-child(2) {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.balance span:nth-child(3) {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.accountMenu span:not([class*="icon"]):not([class*="active"]) {
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+h2 {
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+.refAcc a {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #3c9ef1;
+}
+ul.column2, ul.column3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #3c9ef1;
+}
+.table.type4 {
+    text-transform: uppercase;
 }
