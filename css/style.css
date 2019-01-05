@@ -22,6 +22,11 @@ ul {
     margin: auto;
     padding: 0 15px;
 }
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 /*MAIN*/
 .active1 {
     font-size: 15px;
@@ -44,6 +49,11 @@ ul {
 }
 .topMenu {
     background-color: #202b2f;
+}
+ul.menu li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
 }
 .calculator {
     background: linear-gradient(to right, #3c9ef1, #44d29d);
@@ -91,6 +101,7 @@ ul.menu li a {
     font-weight: bold;
 }
 .info h1 {
+    text-align: right;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: 0.025em;
@@ -100,7 +111,9 @@ ul.menu li a {
 }
 .toStart h2.captionLight {
     font-weight: normal;
+    text-align: right;
 }
+
 .captionLight {
     font-size: 30px;
     line-height: 60px;
@@ -145,6 +158,10 @@ ul.menu li a {
 ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem span:nth-child(2) {
     letter-spacing: 0.025em;
 }
+.courses {
+    width: 305px;
+    float: right;
+}
 .courses ul li span[class*="icon"] {
     font-size: 60px;
     color: #202b2f;
@@ -169,11 +186,24 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
 .mainAdvs li span[class*="icon"] {
     font-size: 40px;
 }
+.aboutUs, .info, .referral {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.license {
+    width: 470px;
+    margin-right: 55px;
+    float: left;
+}
 .license span.icon-columns {
     font-size: 65px;
     background: linear-gradient(to right, #3c9ef1, #44d29d);
     -webkit-background-clip: text;
     color: transparent;
+}
+.dailyPlan {
+    width: 570px;
+    float: left;
 }
 .dailyPlanInfo span:nth-child(2), .afterPlanInfo span:nth-child(2) {
     font-size: 90px;
@@ -213,6 +243,10 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
     line-height: 30px;
     color: #202b2f;
     letter-spacing: 0.025em;
+}
+.calculator  .container>div, a {
+    margin-right: 40px;
+    display: inline-block;
 }
 .calculator label {
     font-size: 15px;
@@ -329,6 +363,9 @@ div[class*="newsItem"] p.newsText {
 }
 footer {
     background-color: #202b2f;
+}
+.footerMenu {
+
 }
 .footerMenu .logo span {
     color: #ffffff;
