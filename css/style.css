@@ -44,16 +44,56 @@ ul {
     text-transform: uppercase;
     color: #44d29d;
 }
+.table {
+    display: table;
+    width: 100%;
+}
+.tRow {
+    display: table-row;
+}
+.tCell {
+    display: table-cell;
+}
 .topBar {
-    background-color: white ;
+    background-color: pink ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+.image {
+    position: absolute;
+    left: 459px;
+    top: 33px;
+    width: 92px;
+    height: 47px;
+    z-index: 8;
+}
+
+.bitLimited {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.bitLimited span {
+    display: block;
+    margin-top: 5px;
 }
 .topMenu {
     background-color: #202b2f;
+    text-align: right;
 }
 ul.menu li {
     display: inline-block;
-    text-align: center;
-    margin-left: 40px;
+    margin-right: 11px;
+}
+.toStart {
+    padding-left: 30%;
+}
+.toStart p {
+    display: block;
+    text-align: right;
 }
 .calculator {
     background: linear-gradient(to right, #3c9ef1, #44d29d);
@@ -89,6 +129,14 @@ ul.menu li {
     font-style: italic;
     font-weight: bold;
 }
+.socLinks ul {
+    display: table;
+    width: 50px;
+}
+.socLinks ul li {
+    display: table-cell;
+    margin-right: 15px;
+}
 .socLinks [class*="icon"] {
     font-size: 22px;
     line-height: 22px;
@@ -120,6 +168,7 @@ ul.menu li a {
     letter-spacing: 0.025em;
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
 }
 .captionDark {
     font-size: 30px;
@@ -127,6 +176,7 @@ ul.menu li a {
     letter-spacing: 0.025em;
     color: #202b2f;
     text-transform: uppercase;
+    text-align: center;
 }
 .textLight {
     font-size: 17px;
@@ -186,6 +236,20 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
 .mainAdvs li span[class*="icon"] {
     font-size: 40px;
 }
+.clear {
+    width: 1200px;
+    position: relative;
+    padding: 0 15px;
+}
+.diagram img {
+    position: absolute;
+    left: 615px;
+    top: 700px;
+    width: 615px;
+    height: 470px;
+    z-index: 260;
+}
+
 .aboutUs, .info, .referral {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -266,6 +330,22 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
     font-weight: bold;
     color: #202b2f;
 }
+/*REFFERALS*/
+.referral {
+    text-align: center;
+}
+.commission1, .commission2 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.commission1 {
+    padding-right: 100px;
+}
+.commission2 {
+    padding-left: 100px;
+}
 .commission1 span:first-child, .commission2 span:first-child {
     font-size: 30px;
     line-height: 40px;
@@ -293,6 +373,13 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
 .commission2 p {
     color: #44d29d;
 }
+.statistics {
+    margin-top: 50px;
+}
+ul.statistics li {
+    float: left;
+    width: 20%;
+}
 ul.statistics li span[class*="icon"] {
     font-size: 40px;
     color: #202b2f;
@@ -311,6 +398,9 @@ ul.statistics li span:nth-child(3) {
     letter-spacing: 0.05em;
     font-weight: bold;
     color: #202b2f;
+}
+.lastDep {
+    float: left;
 }
 ul.lastDep li span, ul.lastWithdrawals li span {
     letter-spacing: 0.025em;
@@ -337,13 +427,22 @@ ul.lastDep li span[class*="icon"], ul.lastWithdrawals li span[class*="icon"] {
     font-size: 24px;
     font-weight: bold;
 }
+.whyUsItem {
+    float: left;
+    width: 33.3333%;
+}
 .whyUsItem p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #d4dbde;
 }
-div[class*="newsItem"] span {
+.newsItem {
+    background-color: white;
+    float: left;
+    width: 33.3333%;
+}
+.newsItem span {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.025em;
@@ -365,10 +464,31 @@ footer {
     background-color: #202b2f;
 }
 .footerMenu {
-
+    padding-bottom: 50px;
 }
-.footerMenu .logo span {
+.footerMenu .socLinks {
+}
+.footerMenu .logo span:not([class*='icon']) {
     color: #ffffff;
+}
+.footerMenu .logo, .footerMenu .menuCol1, .footerMenu .menuCol2, .footerMenu .contacts {
+    display: inline-block;
+    width: 20%;
+}
+.footerMenu .contacts {
+    vertical-align: top;
+}
+.footerMenu .contacts span, a {
+    display: block;
+}
+.partners {
+    background-color: #ffffff;
+}
+.partners .tCell {
+    vertical-align: middle;
+}
+.partners li:last-child img {
+    margin-left: 60px;
 }
 footer div.menuCol1 li a, div.menuCol2 li a {
     font-size: 15px;
@@ -392,6 +512,14 @@ footer .contacts span:nth-child(odd) {
     text-transform: uppercase;
     color: #44d29d;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -426,6 +554,11 @@ footer .contacts span:nth-child(odd) {
     font-weight: bold;
     color: #ffffff;
 }
+.accountInfo .avatar, .accountInfo .settings, .accountInfo .dates, .accountInfo .balance, .accountInfo .deps{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .myAccount img {
     width: 32px;
     height: 32px;
@@ -468,6 +601,13 @@ footer .contacts span:nth-child(odd) {
     text-transform: uppercase;
     color: #ffffff;
 }
+.accountMenu {
+    float: left;
+    margin-right: 10px;
+}
+.accountMenu span {
+    display: block;
+}
 .accountMenu span:not([class*="icon"]):not([class*="active"]) {
     font-size: 15px;
     line-height: 60px;
@@ -484,6 +624,9 @@ h2 {
     text-transform: uppercase;
     color: #202b2f;
 }
+.refAccInfo .table {
+    width: 100%;
+}
 .refAcc a {
     font-size: 17px;
     line-height: 30px;
@@ -497,6 +640,7 @@ ul.column2, ul.column3 {
     font-weight: bold;
     color: #3c9ef1;
 }
-.table.type4 {
-    text-transform: uppercase;
+.refInfo .table * {
+    vertical-align: middle;
 }
+
