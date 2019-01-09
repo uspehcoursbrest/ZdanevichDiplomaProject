@@ -107,7 +107,19 @@ ul.menu li {
 * a {
     text-decoration: none;
 }
-
+.topBar .table  .tCell, .footerMenu .tCell {
+    width: 25%;
+}
+.logo {
+    position: relative;
+}
+.x {
+    position: absolute;
+    top: 0;
+}
+.watches.tCell {
+    text-align: right;
+}
 .logo img, .referral, .plans, .aboutUs, .info, .whyUs, .news {
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,7 +133,7 @@ ul.menu li {
     font-weight: bold;
     font-style: italic;
 }
-.logo span:nth-child(2) {
+.logo span:nth-child(3) {
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.35em;
@@ -463,6 +475,7 @@ div[class*="newsItem"] p.newsText {
 footer {
     background-color: #202b2f;
 }
+.
 .footerMenu {
     padding-bottom: 50px;
 }
@@ -490,6 +503,9 @@ footer {
 .partners li:last-child img {
     margin-left: 60px;
 }
+.footerMenu .table .tCell {
+    vertical-align: middle;
+}
 footer div.menuCol1 li a, div.menuCol2 li a {
     font-size: 15px;
     line-height: 60px;
@@ -512,6 +528,7 @@ footer .contacts span:nth-child(odd) {
     text-transform: uppercase;
     color: #44d29d;
 }
+
 
 
 
