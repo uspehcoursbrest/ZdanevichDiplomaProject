@@ -54,10 +54,28 @@ ul {
 .tCell {
     display: table-cell;
 }
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+.invisLink a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+
 .topBar {
-    background-color: pink ;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: table;
     width: 100%;
     vertical-align: middle;
@@ -89,10 +107,6 @@ ul.menu li {
     margin-right: 11px;
 }
 .toStart {
-    padding-left: 30%;
-}
-.toStart p {
-    display: block;
     text-align: right;
 }
 .calculator {
@@ -169,6 +183,9 @@ ul.menu li a {
     font-weight: bold;
     text-transform: uppercase;
 }
+.info a {
+    margin-left: auto;
+}
 .toStart h2.captionLight {
     font-weight: normal;
     text-align: right;
@@ -200,6 +217,7 @@ ul.menu li a {
     line-height: 30px;
     color: #202b2f;
 }
+/*BUTTONS*/
 
 .btnFillColor1, .btnFillColor2, .btnFillDark, .btnFillGrad, ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem span:nth-child(2) {
     font-size: 17px;
@@ -217,12 +235,69 @@ ul.menu li a {
     color: #ffffff;
     text-transform: uppercase;
 }
+.btnFillGrad {
+    background: linear-gradient(to right, #3c9ef1, #44d29d);
+    border-radius: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+.btnFillColor1 {
+    background: #3c9ef1;
+    border-radius: 32px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+.btnFillColor2 {
+    background: #44d29d;
+    border-radius: 32px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+.btnFillColor3 {
+    background: #3c9ef1;
+    border-radius: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btnFillColor4 {
+    background: #44d29d;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btnFillDark {
+    background: #202b2f;
+    border-radius: 32px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
 ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem span:nth-child(2) {
     letter-spacing: 0.025em;
 }
 .courses {
-    width: 305px;
-    float: right;
+    background: white;
+    margin-left: auto;
+    margin-top: 70px;
+    border-radius: 21px;
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.21);
+    width: 308px;
+    height: 334px;
 }
 .courses ul li span[class*="icon"] {
     font-size: 60px;
@@ -256,26 +331,32 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
 .diagram img {
     position: absolute;
     left: 615px;
-    top: 700px;
+    top: 840px;
     width: 615px;
     height: 470px;
     z-index: 260;
 }
 
-.aboutUs, .info, .referral {
+.info, .aboutUs, .plans, .referral, .whyUs, .news {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 .license {
+    position: relative;
     width: 470px;
     margin-right: 55px;
     float: left;
 }
-.license span.icon-columns {
-    font-size: 65px;
+.license span {
+    position: absolute;
+    left: 10px;
+    font-size: 80px;
     background: linear-gradient(to right, #3c9ef1, #44d29d);
     -webkit-background-clip: text;
     color: transparent;
+}
+.license p {
+    margin-left: 85px;
 }
 .dailyPlan {
     width: 570px;
@@ -385,6 +466,14 @@ ul.mainAdvs li span:nth-child(2), ul.mainAdvs li span:nth-child(3), .whyUsItem s
 .commission2 p {
     color: #44d29d;
 }
+.commission1 span:first-child {
+    background: #3c9ef1;
+    display: inline-block;
+    text-align: center;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%
+}
 .statistics {
     margin-top: 50px;
 }
@@ -413,6 +502,13 @@ ul.statistics li span:nth-child(3) {
 }
 .lastDep {
     float: left;
+    background: white;
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.21);
+    width: 570px;
+    height: 414px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
 ul.lastDep li span, ul.lastWithdrawals li span {
     letter-spacing: 0.025em;
@@ -440,8 +536,19 @@ ul.lastDep li span[class*="icon"], ul.lastWithdrawals li span[class*="icon"] {
     font-weight: bold;
 }
 .whyUsItem {
+    position: relative;
     float: left;
     width: 33.3333%;
+    margin-top: 110px;
+    text-align: center;
+}
+.whyUsItem span[class*="icon"] {
+    font-size: 90px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 39%;
+    bottom: 100px;
 }
 .whyUsItem p {
     font-size: 15px;
@@ -450,9 +557,12 @@ ul.lastDep li span[class*="icon"], ul.lastWithdrawals li span[class*="icon"] {
     color: #d4dbde;
 }
 .newsItem {
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.11);
     background-color: white;
     float: left;
     width: 33.3333%;
+    padding: 35px;
+    border-radius: 17px;
 }
 .newsItem span {
     font-size: 15px;
@@ -475,7 +585,6 @@ div[class*="newsItem"] p.newsText {
 footer {
     background-color: #202b2f;
 }
-.
 .footerMenu {
     padding-bottom: 50px;
 }
@@ -484,15 +593,9 @@ footer {
 .footerMenu .logo span:not([class*='icon']) {
     color: #ffffff;
 }
-.footerMenu .logo, .footerMenu .menuCol1, .footerMenu .menuCol2, .footerMenu .contacts {
-    display: inline-block;
-    width: 20%;
-}
+
 .footerMenu .contacts {
     vertical-align: top;
-}
-.footerMenu .contacts span, a {
-    display: block;
 }
 .partners {
     background-color: #ffffff;
@@ -505,6 +608,10 @@ footer {
 }
 .footerMenu .table .tCell {
     vertical-align: middle;
+    width: 25%;
+}
+.contacts.tCell {
+    margin-left: auto;
 }
 footer div.menuCol1 li a, div.menuCol2 li a {
     font-size: 15px;
@@ -519,6 +626,7 @@ footer .contacts a {
     text-decoration: underline;
     letter-spacing: 0.025em;
     color: #3c9ef1;
+    display: block;
 }
 footer .contacts span:nth-child(odd) {
     font-size: 15px;
@@ -527,6 +635,7 @@ footer .contacts span:nth-child(odd) {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #44d29d;
+    display: block;
 }
 
 
@@ -584,7 +693,7 @@ footer .contacts span:nth-child(odd) {
     width: 90px;
     height: 90px;
 }
-.content [class*="icon"] {
+.content.referral [class*="icon"] {
     font-size: 40px;
 }
 .balance .icon-cash {
